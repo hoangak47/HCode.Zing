@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { useContext, useEffect, useLayoutEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Context from '~/context/context';
@@ -23,12 +24,42 @@ function Home() {
     document.title = 'Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile và TV';
 
     const dataBaner = dataPage !== undefined && dataPage[0].items;
-    const dataRender = dataPage !== undefined && [dataPage[3], dataPage[4], dataPage[5], dataPage[9], dataPage[12]];
+
+    const [dataHome, setDataHome] = useState([]);
+
+    const needData = [
+        {
+            name: 'Mới phát hành',
+        },
+        {
+            name: 'Lựa chọn hôm nay',
+        },
+        {
+            name: 'Top 100',
+        },
+        {
+            name: "XONE's CORNER",
+        },
+    ];
+
+    useEffect(() => {
+        const dataSet = [];
+        dataPage !== undefined &&
+            dataPage.map((item) => {
+                needData.map((data) => {
+                    if (item.title === data.name) {
+                        dataSet.push(item);
+                    }
+                });
+            });
+        setDataHome(dataSet);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [dataPage]);
 
     const render = () => {
         return (
             <>
-                <RenderHome dataRender={dataRender} navigate={navigate} context={context} />
+                <RenderHome dataRender={dataHome} navigate={navigate} context={context} />
             </>
         );
     };
