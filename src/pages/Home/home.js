@@ -56,6 +56,8 @@ function Home() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dataPage]);
 
+    console.log(dataHome);
+
     const render = () => {
         return (
             <>

@@ -10,7 +10,7 @@ function DataPageOne({ dataRender, navigate, context }) {
                             <h2 className="pageTitle">{item.title}</h2>
                             <div className="row boxBanner">
                                 {item.title === 'Mới phát hành'
-                                    ? item.items[0].song.slice(0, 5).map((items, indexx) => {
+                                    ? item.items[0].album.slice(0, 5).map((items, indexx) => {
                                           return (
                                               <div
                                                   className="col sm_gutter l_2_4 m_3 c_4 render-album-item "
