@@ -40,6 +40,9 @@ function Home() {
         {
             name: "XONE's CORNER",
         },
+        {
+            name: 'Nhạc Mới Mỗi Ngày',
+        },
     ];
 
     useEffect(() => {
