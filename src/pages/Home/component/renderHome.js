@@ -5,7 +5,6 @@ function DataPageOne({ dataRender, navigate, context }) {
         <>
             {dataRender.length > 0 &&
                 dataRender.map((item, index) => {
-        console.log(item.items);
                     return (
                         <div key={index}>
                             <h2 className="pageTitle">{item.title}</h2>
