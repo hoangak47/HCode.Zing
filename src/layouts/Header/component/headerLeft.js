@@ -10,7 +10,7 @@ function HeaerLeft({ navigate }) {
                     alt="Zing"
                 />
             </div>
-            <button onClick={() => navigate(-1)} className="btnHeader prevPage active">
+            <button onClick={() => navigate("https://www.youtube.com/watch?v=dV-znS6RPbQ&list=RDefrVSI3yVSA&index=4&ab_channel=KARIK")} className="btnHeader prevPage active">
                 <i className="icon ic-back"></i>
             </button>
             <button onClick={() => navigate(1)} className="btnHeader nextPage">
