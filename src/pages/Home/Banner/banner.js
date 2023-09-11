@@ -6,9 +6,9 @@ import './banner.css';
 function Banner({ loading, dataBaner }) {
     const navigate = useNavigate();
 
-    const [imgLeft, setImgLeft] = useState(1);
-    const [imgSelected, setImgSelected] = useState(2);
-    const [imgRight, setImgRight] = useState(3);
+    const [imgLeft, setImgLeft] = useState(0);
+    const [imgSelected, setImgSelected] = useState(1);
+    const [imgRight, setImgRight] = useState(2);
 
     const handleNextBanner = () => {
         setImgLeft(imgLeft + 1);

@@ -71,7 +71,7 @@
 
 .imgSelected {
     opacity: 1;
-    z-index: 8;
+    z-index: 9;
     left: 50%;
     top: 0;
     transform: translate(-50%, 0);

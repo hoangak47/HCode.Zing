@@ -29,19 +29,19 @@ function Home() {
 
     const needData = [
         {
-            name: 'Mới phát hành',
+            name: 'Chill',
         },
         {
-            name: 'Lựa chọn hôm nay',
+            name: 'Một chút yêu đời',
         },
         {
             name: 'Top 100',
         },
         {
-            name: "XONE's CORNER",
+            name: 'Remix là Dance luôn',
         },
         {
-            name: 'Nhạc Mới Mỗi Ngày',
+            name: 'Tâm trạng tan chậm',
         },
     ];
 

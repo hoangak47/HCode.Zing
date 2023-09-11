@@ -35,6 +35,7 @@ function ZingChart() {
     useLayoutEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         context.setInputSearch('');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const renderChart = () => {

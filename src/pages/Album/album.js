@@ -25,9 +25,9 @@ function Album() {
 
     useEffect(() => {
         axios.get(`${URL}playlist/${window.location.pathname.split('/')[3]}`).then(({ data }) => {
-            document.title = data.data.title;
-            setDataSong(data.data.song);
-            setDatas(data.data);
+            document.title = data?.data?.title;
+            setDataSong(data?.data?.song);
+            setDatas(data?.data);
         });
         context.setInputSearch('');
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -36,7 +36,7 @@ function Album() {
     return (
         <>
             <div className="album">
-                {dataSong.items.length > 0 ? (
+                {dataSong?.items?.length > 0 ? (
                     <ListAlbumItem datas={datas} dataSong={dataSong} context={context} />
                 ) : (
                     <>
