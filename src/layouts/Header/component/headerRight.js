@@ -37,7 +37,7 @@ function HeaderRight({ context, headerInfo }) {
                 <div onClick={() => handleClick()} className="circle check-btn-info">
                     <img
                         className="check-btn-img"
-                        src="https://s120-ava-talk-zmp3.zmdcdn.me/8/b/9/3/10/120/34dc3b79fce0b96839a43e2cf66ddfde.jpg"
+                        src="https://s120-ava-talk-zmp3.zmdcdn.me/b/b/1/4/23/120/9cde2b22c924158af52e1b281e3bcb8f.jpg"
                         alt=""
                     />
                 </div>
