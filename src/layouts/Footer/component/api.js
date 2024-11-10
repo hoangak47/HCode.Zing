@@ -37,7 +37,7 @@ function Api(
                 .catch((err) => {
                     rangeInputSong.current.style.backgroundSize = 0;
                     setValue(0);
-                    alert('Lỗi khi tải bài hát. Nguyên nhân do dữ liệu! Vui lòng chọn bài hát khác!');
+                    alert('Lỗi khi tải bài hát. Nguyên nhân do server host Singapore! Vui lòng chọn bài hát khác!');
                     audio.current.src = '';
                     context.pauseSong();
                     audio.current.pause();

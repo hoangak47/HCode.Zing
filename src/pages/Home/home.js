@@ -27,33 +27,11 @@ function Home() {
 
     const [dataHome, setDataHome] = useState([]);
 
-    const needData = [
-        {
-            name: 'Chill',
-        },
-        {
-            name: 'Một chút yêu đời',
-        },
-        {
-            name: 'Top 100',
-        },
-        {
-            name: 'Remix là Dance luôn',
-        },
-        {
-            name: 'Tâm trạng tan chậm',
-        },
-    ];
-
     useEffect(() => {
         const dataSet = [];
         dataPage !== undefined &&
             dataPage.map((item) => {
-                needData.map((data) => {
-                    if (item.title === data.name) {
-                        dataSet.push(item);
-                    }
-                });
+                item?.items?.length > 0 && item.sectionType === 'playlist' && dataSet.push(item);
             });
         setDataHome(dataSet);
         // eslint-disable-next-line react-hooks/exhaustive-deps
