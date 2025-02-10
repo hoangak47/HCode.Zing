@@ -18,9 +18,9 @@ function App() {
     const context = useContext(Context);
     const data = context.songList[0].length;
 
-    useEffect(() => {
-        alert('Nguyên nhân do server nên hiện tại chỉ load được những bài hát Việt Nam');
-    }, []);
+    // useEffect(() => {
+    //     alert('Nguyên nhân do server nên hiện tại chỉ load được những bài hát Việt Nam');
+    // }, []);
 
     Change();
 
