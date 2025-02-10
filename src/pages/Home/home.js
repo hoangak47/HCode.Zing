@@ -34,6 +34,7 @@ function Home() {
                 item?.items?.length > 0 && item.sectionType === 'playlist' && dataSet.push(item);
             });
         setDataHome(dataSet);
+        console.log(dataPage);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dataPage]);
 
@@ -57,7 +58,7 @@ function Home() {
     return (
         <>
             <div className="grid wide">
-                <Banner loading={loading} dataBaner={dataPage !== undefined && dataBaner} />
+                {/* <Banner loading={loading} dataBaner={dataPage !== undefined && dataBaner} /> */}
 
                 {loading ? render() : <Loading />}
             </div>
